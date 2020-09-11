@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div name="calculator-container">
+        <h1 style="text-align: center;">Calculadora</h1>
+        <form name="container">
+            <input type="textfield" id="data" value="" disabled>
+            <br>
+            <input class="button" type="button" value="1" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="2" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="3" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="+" onclick="pintarOperador(this.value)">
+            <input class="button" type="button" value="4" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="5" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="6" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="-" onclick="pintarOperador(this.value)">
+            <input class="button" type="button" value="7" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="8" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="9" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="*" onclick="pintarOperador(this.value)">
+            <input class="button" type="reset" value="Clear" onclick="clear()">
+            <input class="button" type="button" value="0" onclick="pintarNumero(this.value)">
+            <input class="button" type="button" value="/" onclick="pintarOperador(this.value)">
+            <input class="button" type="button" value="=" onclick="mostrarResultado()">
+        </form>
+    </div>
+
+    <form name="mensaje">
+        <input class="button" type="button" id="diaSemana" value="Mensaje del Día" onclick="mensajeDia()"></input>
+    </form>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
