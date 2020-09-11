@@ -3,6 +3,7 @@
  * innerHTML = div, h, p, buttons
  */
 
+
 function pintarNumero(number) {
     //document.getElementById('data').value = number;
     pintarDatos(number);
@@ -55,32 +56,35 @@ function mensajeDia() {
 
     switch (dia) {
         case 'Lunes':
-            alert("¡Feliz Lunes! Que tengas un gran comienzo de Semana.");
+            swal("¡Feliz Lunes! Que tengas un gran comienzo de Semana.");
             break;
 
         case 'Martes':
-            alert("¡Feliz Martes! Acepta lo que es, suelta lo que se fue y ten fe en lo que vendra.");
+            swal("¡Feliz Martes! Acepta lo que es, suelta lo que se fue y ten fe en lo que vendra.");
             break;
 
         case 'Miercoles':
-            alert("¡Feliz Miercoles! Vive, Ama y se muy pero muy Feliz :D");
+            swal("¡Feliz Miercoles! Vive, Ama y se muy pero muy Feliz :D");
             break;
 
         case 'Jueves':
-            alert("¡Feliz Jueves! Te deseo Paciencia, saber esperar es una virtud que todos podemos tener.");
+            swal("¡Feliz Jueves! Te deseo Paciencia, saber esperar es una virtud que todos podemos tener.");
             break;
 
         case 'Viernes':
-            alert("¡Feliz Viernes! El tiempo no se detiene ni espera por nadie, por eso aprovecha tu vida y NO dejes nada par mañana.");
+            swal("¡Feliz Viernes! El tiempo no se detiene ni espera por nadie, por eso aprovecha tu vida y NO dejes nada par mañana.");
             break;
 
         case 'Sabado':
-            alert("¡Feliz Sabado! Los limites solo se encuentran en tu propia mente.");
+            swal("¡Feliz Sabado! Los limites solo se encuentran en tu propia mente.");
             break;
 
         case 'Domingo':
-            alert("¡Feliz Domingo! Nunca dejes de creer.");
+            swal("¡Feliz Domingo! Nunca dejes de creer.");
             break;
+
+        default:
+            swal("Los datos ingresados no corresponden a un dia de la semana")
 
     }
 
